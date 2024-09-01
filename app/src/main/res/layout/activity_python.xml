@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".PythonActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/pythontxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            app:title="Python Programming"
+            app:titleTextColor="@color/black"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pythontxt">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    app:layout_constraintTop_toBottomOf="@+id/pythontxt" />
+
+                <TextView
+                    android:id="@+id/lec1"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/course"
+                    android:drawableLeft="@drawable/play"
+                    android:elevation="5dp"
+                    android:gravity="center|left"
+                    android:paddingStart="16dp"
+                    android:text="\tLacture 1"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text3"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lec2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/course"
+                    android:drawableLeft="@drawable/play"
+                    android:elevation="5dp"
+                    android:gravity="center|left"
+                    android:paddingStart="16dp"
+                    android:text="\tLacture 2"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lec1"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lec3"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/course"
+                    android:drawableLeft="@drawable/play"
+                    android:elevation="5dp"
+                    android:gravity="center|left"
+                    android:paddingStart="16dp"
+                    android:text="\tLacture 3"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lec2"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lec4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/course"
+                    android:drawableLeft="@drawable/play"
+                    android:elevation="5dp"
+                    android:gravity="center|left"
+                    android:paddingStart="16dp"
+                    android:text="\tLacture 4"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lec3"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lec5"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/course"
+                    android:drawableLeft="@drawable/play"
+                    android:elevation="5dp"
+                    android:gravity="center|left"
+                    android:paddingStart="16dp"
+                    android:text="\tLacture 5"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lec4"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lec6"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/course"
+                    android:drawableLeft="@drawable/play"
+                    android:elevation="5dp"
+                    android:gravity="center|left"
+                    android:paddingStart="16dp"
+                    android:text="\tLacture 6"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lec5"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lec7"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/course"
+                    android:drawableLeft="@drawable/play"
+                    android:elevation="5dp"
+                    android:gravity="center|left"
+                    android:paddingStart="16dp"
+                    android:text="\tLacture 7"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lec6"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lec8"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/course"
+                    android:drawableLeft="@drawable/play"
+                    android:elevation="5dp"
+                    android:gravity="center|left"
+                    android:paddingStart="16dp"
+                    android:text="\tLacture 8"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lec7"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/lec9"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/course"
+                    android:drawableLeft="@drawable/play"
+                    android:elevation="5dp"
+                    android:gravity="center|left"
+                    android:paddingStart="16dp"
+                    android:text="\tLacture 9"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lec8"
+                    tools:ignore="MissingConstraints" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

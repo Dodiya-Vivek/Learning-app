@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Home"
+
+        android:icon="@drawable/homeb"
+        android:id="@+id/home1"/>
+    <item android:title="Search"
+        android:icon="@drawable/searchb"
+        android:id="@+id/caln2"/>
+    <item android:title="Books"
+        android:icon="@drawable/book_svgrepo_com"
+        android:id="@+id/books5"/>
+    <item android:title="Videos"
+        android:icon="@drawable/videob"
+        android:id="@+id/Video3"/>
+    <item android:title="Profile"
+        android:icon="@drawable/userb"
+        android:id="@+id/profile4"/>
+
+
+
+
+</menu>

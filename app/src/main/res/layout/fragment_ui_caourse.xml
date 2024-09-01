@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UiCaourseFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="UI/UX Designing"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/searchcustom"
+        android:drawableLeft="@drawable/baseline_keyboard_arrow_left_24"
+        android:gravity="center"
+        android:text="UI/UX Designing"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool"
+        tools:ignore="MissingConstraints" />
+
+    <!--<WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />-->
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool" />
+
+
+    <!--<FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool"
+        tools:ignore="MissingConstraints">
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+    </FrameLayout>-->
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Playlist"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="414dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text=" What is UI UX?"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.516"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text3"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/getstarted"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" Get Started"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intro" />
+
+            <TextView
+                android:id="@+id/webdesign"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" Website Design UI"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/getstarted" />
+
+            <TextView
+                android:id="@+id/icon"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" Create Frosted Glass Icons"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/webdesign" />
+
+            <TextView
+                android:id="@+id/game"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" PRO Gaming Console UI Design"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/icon" />
+
+            <TextView
+                android:id="@+id/morden"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" Create 03 Modern Design"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/game" />
+
+            <TextView
+                android:id="@+id/ui"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" Made a Ui Design For Logitech"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/morden" />
+
+            <TextView
+                android:id="@+id/tips"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" Websites Design Tips"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ui" />
+            <TextView
+                android:id="@+id/tips2"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" Tips to work 10X Faster in Figma"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tips" />
+
+            <TextView
+                android:id="@+id/web"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" Professional Website UI Design "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tips2" />
+
+            <TextView
+                android:id="@+id/web2"
+                android:layout_width="340dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:text=" 2nd Professional Website UI Design"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="normal"
+                android:paddingStart="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/web" />
+
+            <TextView
+                android:id="@+id/blank"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/web2"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

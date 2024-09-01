@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DigitalMarketingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Digital Marketing"
+        app:titleTextColor="@color/black" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/searchcustom"
+        android:drawableLeft="@drawable/baseline_keyboard_arrow_left_24"
+        android:text="Digital Marketing"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <!--<WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />-->
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <!--<FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints">
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </FrameLayout>-->
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Playlist"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video"
+        tools:ignore="MissingConstraints" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/text2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text=" Introduction"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text3"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tDigital Marketing Modules"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="5dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intro"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tHow To Start A Blog"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="5dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tHow To Setup Blog WordPress\n Customisation"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tHow To Find A Profiteble Niche"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video3"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tWhat is SEO and How Does\n\tit Work?"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video4"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tOff-Page SEO &amp; Backlinks"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video5"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video7"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tAffiliate Marketing "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video6"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video8"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tHow To Start Social Media\n\tMarketing "
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video7"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video9"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tYouTube Marketing"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video8"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video10"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tFacebook Ads"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video9"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video11"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tHow To Run YouTube Ads"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video10"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video12"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tContent Marketing"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video11"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video13"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tEmail Marketing Complete Guide"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video12"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video14"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tHow To Create HIGH Converting\n\tLanding Pages"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video13"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video15"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tWhat is Online Reputation\n\tManagement"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video14"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video16"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tFreelancing Tutorial For Beginners"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video15"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video17"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tDigital Marketing Career"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video16"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video18"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tBonus Video"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video17"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video19"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tHow To Earn ₹1 Crore In One Month"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video18"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/blank"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video19"/>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

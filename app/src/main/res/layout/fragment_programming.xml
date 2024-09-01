@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ProgrammingFragment">
+
+        <!-- Your existing layout content here -->
+
+        <!--<TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/searchcustom"
+            android:drawableLeft="@drawable/baseline_keyboard_arrow_left_24"
+            android:text="Programming"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />-->
+
+        <!--<WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/video"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:elevation="4dp"
+            app:title="Programming"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="MissingConstraints">
+
+            <VideoView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Playlist"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/introduction"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/course"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/play"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:text=" Introduction"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:elevation="10dp"
+            android:textStyle="normal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text2"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/clanguage"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/course"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/play"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:text=" C Programming Tutorial"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:elevation="10dp"
+            android:textStyle="normal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/introduction"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/cpp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/course"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/play"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:text=" C++ Programming Tutorial"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:elevation="10dp"
+            android:textStyle="normal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clanguage"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/java"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/course"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/play"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:text=" Java Programming Tutorial"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:elevation="10dp"
+            android:textStyle="normal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cpp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/html"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/course"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/play"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:text="\tHTML Programming Tutorial"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:elevation="10dp"
+            android:textStyle="normal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/java"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/javascript"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/course"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/play"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:text="\tJavascript Tutorial"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:elevation="10dp"
+            android:textStyle="normal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/html"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/python"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/course"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:drawableLeft="@drawable/play"
+            android:gravity="center|left"
+            android:paddingStart="16dp"
+            android:text="\tPython Tutorial"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:elevation="10dp"
+            android:textStyle="normal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/javascript"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/blank"
+            android:layout_width="340dp"
+            android:layout_height="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/python"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

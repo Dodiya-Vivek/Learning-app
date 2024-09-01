@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40287977069",
+    "project_id": "skillupnow-87e15",
+    "storage_bucket": "skillupnow-87e15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40287977069:android:5ea9d5c5cdf2e6797f8964",
+        "android_client_info": {
+          "package_name": "com.example.skillupnow"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbo5KNMQCKQR_w964CSvJJ5NhpGdCVOeI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

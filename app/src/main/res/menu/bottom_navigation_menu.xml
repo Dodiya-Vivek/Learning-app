@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/homeb"
+        android:title="Home" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/searchb"
+        android:title="Search" />
+    <item
+        android:id="@+id/video"
+        android:icon="@drawable/videob"
+        android:title="Video" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/userb"
+        android:title="Profile" />
+</menu>

@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MotionGraphicsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Motin Graphics"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--<WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />-->
+
+
+    <VideoView
+        android:id="@+id/video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool" />
+
+    <!--<FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tool"
+        tools:ignore="MissingConstraints">
+
+        <VideoView
+            android:id="@+id/video"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </FrameLayout>-->
+
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Playlist"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/video"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/text2"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/consraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:elevation="5dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text=" Introduction"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text3"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text=" First Lacture"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="5dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/intro"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text=" Annimated Poster in Ae."
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="5dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video1"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tMotion Graphics Poster"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video2"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tMake After Effects Render\n  FAST!"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video3"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tTrendy Typography Animation"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video4"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\t5 Secret Techniques"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video5"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video7"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tCreative Typography Animation"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video6"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video8"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tMotion Graphics Poster\n Animation"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video7"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video9"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\t3 Title Animation"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video8"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video10"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tCloth Displacement Logo\n Animation"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video9"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video11"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/course"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:drawableLeft="@drawable/play"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\t10 Quick and Crazy Hacks"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:elevation="10dp"
+                android:textStyle="normal"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video10"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video12"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tBass Shake Effect"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video11"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video13"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tCinematic Title Animation"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video12"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video14"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tInk Reveal Slideshow"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video13"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video15"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tSeamless Zoom Transition"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video14"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video16"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tBest Render Settings Ae."
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video15"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video17"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tTop 10 Plugins"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video16"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video18"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tMinimal Title Text Animation"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video17"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video19"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tEASY Color Grading"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video18"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video20"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tSocial Media Poster"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video19"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video21"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tMotion Graphic Social Media Poster"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video20"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/video22"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/course"
+                android:drawableLeft="@drawable/play"
+                android:elevation="10dp"
+                android:gravity="center|left"
+                android:paddingStart="16dp"
+                android:text="\tTypography Animation"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video21"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:id="@+id/blank"
+                android:layout_width="340dp"
+                android:layout_height="450dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/video22"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

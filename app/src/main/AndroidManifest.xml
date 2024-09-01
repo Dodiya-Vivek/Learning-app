@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SkillUpNow"
+        tools:targetApi="31">
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.skillupnow.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".Quiz.PHPQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz.HTMLQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz.JavaScriptQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz.PythonQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz.JavaQuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz.QuizActivity"
+            android:exported="false" />
+        <!--<activity
+            android:name=".demo"
+            android:exported="false" />-->
+        <activity
+            android:name=".ChatBot.ChatBotActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PdfViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CodingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MGActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DigitalMarketingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SqlActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExcelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FragmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JavaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PythonActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".Mainfragment" -->
+        <!-- android:exported="false" /> -->
+        <!--
+<activity
+            android:name=".SeeAllActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SkillUpNow" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" /> &lt;!&ndash; <activity &ndash;&gt;
+        &lt;!&ndash; android:name=".Demo" &ndash;&gt;
+        &lt;!&ndash; android:exported="false" &ndash;&gt;
+        &lt;!&ndash; android:label="@string/title_activity_demo" /> &ndash;&gt;
+        <activity
+            android:name=".Programming"
+            android:exported="false" />
+        <activity
+            android:name=".MotionGraphics"
+            android:exported="false" />
+        <activity
+            android:name=".DigitalMaeketing"
+            android:exported="false" /> &lt;!&ndash; <activity &ndash;&gt;
+        &lt;!&ndash; android:name=".AllActivity" &ndash;&gt;
+        &lt;!&ndash; android:exported="false" /> &ndash;&gt;
+        <activity
+            android:name=".VideoUIPage"
+            android:exported="false" />
+        &lt;!&ndash;<activity
+        -->
+        <!--
+ android:name=".SearchPage"
+            android:exported="false" />&ndash;&gt;
+        -->
+        <activity
+            android:name=".ForgetPassword"
+            android:exported="false" />
+        <!--activity
+            android:name=".HomePage"
+            android:exported="false" />-->
+        <activity
+            android:name=".SignInPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".GetStartedPage"
+            android:exported="false" />
+        <activity
+            android:name=".SkipPage2"
+            android:exported="false" />
+        <activity
+            android:name=".SkipPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>
